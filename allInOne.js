@@ -24,6 +24,8 @@ window.onload = function() {
             var headElement = document.head || document.getElementsByTagName('head')[0];
             headElement.appendChild(linkElement);
 
+            console.log("AHORA:", headElement);
+
             /////////////////////////////////////  Codigo del Chat  //////////////////////////////////////////
             
             var element = $('.floating-chat');
