@@ -17,6 +17,13 @@ window.onload = function() {
             div.innerHTML = text.slice(text.indexOf("<body>") + 6, text.indexOf("</body>"));
             document.body.insertBefore(div, document.body.firstChild);
 
+           
+            var linkElement = document.createElement('link');
+            linkElement.setAttribute('rel', 'stylesheet');
+            linkElement.setAttribute('href', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+            var headElement = document.head || document.getElementsByTagName('head')[0];
+            headElement.appendChild(linkElement);
+
             /////////////////////////////////////  Codigo del Chat  //////////////////////////////////////////
             
             var element = $('.floating-chat');
